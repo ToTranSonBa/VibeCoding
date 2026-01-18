@@ -1,0 +1,82 @@
+{
+    "$schema": "https://angular.io/config/angular.json",
+    "version": 1,
+    "projects": {
+        "studyapp-frontend": {
+            "projectType": "application",
+            "root": "",
+            "sourceRoot": "src",
+            "architect": {
+                "build": {
+                    "builder": "@angular-devkit/build-angular:browser",
+                    "options": {
+                        "outputPath": "dist/studyapp-frontend",
+                        "index": "src/index.html",
+                        "main": "src/main.ts",
+                        "polyfills": "src/polyfills.ts",
+                        "tsConfig": "tsconfig.app.json",
+                        "assets": [
+                            "src/assets"
+                        ],
+                        "styles": [
+                            "src/styles.css"
+                        ]
+                    }
+                },
+                "serve": {
+                    "builder": "@angular-devkit/build-angular:dev-server",
+                    "options": {
+                        "browserTarget": "studyapp-frontend:build"
+                    }
+                }
+            }
+        }
+    },
+    "defaultProject": "studyapp-frontend",
+    "cli": {
+        "analytics": "d806571e-b170-42dc-a6f2-cc49063e37d0"
+    }
+}
+{
+    "$schema": "https://angular.io/config/angular.json",
+    "version": 1,
+    "targets": {
+        "build": {
+            "builder": "@angular-devkit/build-angular:browser",
+            "options": {
+                "outputPath": "dist/studyapp-frontend",
+                "index": "src/index.html",
+                "main": "src/main.ts",
+                "polyfills": "src/polyfills.ts",
+                "tsConfig": "tsconfig.app.json",
+                "assets": [
+                    "src/assets"
+                ],
+                "styles": [
+                    "src/styles.css"
+                ]
+            }
+        },
+        "serve": {
+            "builder": "@angular-devkit/build-angular:dev-server",
+            "options": {
+                "browserTarget": "studyapp-frontend:build"
+            }
+        }
+    },
+    "cli": {
+        "analytics": "bedc555c-4bed-4bc0-9b1a-719de88015b2"
+    }
+}
+},
+"serve": {
+"builder": "@angular-devkit/build-angular:dev-server",
+"options": {
+    "browserTarget": "studyapp-frontend:build"
+}
+}
+}
+}
+},
+"defaultProject": "studyapp-frontend"
+}
